@@ -1,11 +1,15 @@
 .debug {
-  background-color: rgba(95, 158, 160, .2);
+  background-color: rgba(95, 158, 160, .5);
   border:1px solid black;
-  height: 100px;
+  min-height: 100px;
 }
 
 .dbg-xl {
-  background-color: rgba(95, 158, 160, .2);
+  background-color: rgba(95, 158, 160, .4);
   border:1px solid black;
-  height: 500px;
+  min-height: 500px;
+}
+
+.padding {
+  padding: 30px;
 }
