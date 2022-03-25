@@ -1,5 +1,11 @@
 .debug {
-  background-color: rgba(red, red, red, 0.3);
+  background-color: rgba(95, 158, 160, .2);
   border:1px solid black;
   height: 100px;
+}
+
+.dbg-xl {
+  background-color: rgba(95, 158, 160, .2);
+  border:1px solid black;
+  height: 500px;
 }
