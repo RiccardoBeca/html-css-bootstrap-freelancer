@@ -1,14 +1,13 @@
 /* GENERAL */
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
+ body {
+  font-family: 'Roboto', sans-serif;
+}
 
-  section h2 {
-    padding-bottom: 20px;
-    font-weight: bold;
-    padding-top: 20px;
-  }
-
+section h2 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+/* debug */
 .debug {
   background-color: rgba(95, 158, 160, .5);
   border:1px solid black;
@@ -19,11 +18,37 @@
   border:1px solid black;
   min-height: 500px;
 }
-
+/* /debug */
 
 .w-60-container {
   width: 60%;
   margin: 0 auto;
+}
+
+.divisor {
+  padding-top: 30px;
+  padding-bottom: 30px ;
+}
+.dividing-line {
+  width: 10%;
+  background-color: rgb(43, 61, 79);
+  border-radius: 10px;
+  height: 10px;
+  margin: 0 20px;
+}
+
+.dividing-line.white {
+  background-color: white;
+
+}
+
+.divisor .star {
+  color:rgb(43, 61, 79) ;
+  transform: scale(2);
+}
+
+.divisor .star.white {
+  color:white ;
 }
 
 /* /GENERAL */
@@ -34,6 +59,7 @@ header {
   height: 70px;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 header nav {
@@ -100,6 +126,7 @@ header span {
 }
 
 #jumbotron p {
+  font-size: 25px;
   color: white;
   padding-top: 10px;
   font-weight: bold;
@@ -113,20 +140,54 @@ header span {
   padding-bottom: 30px;
 }
 
+
 #portfolio h2 {
   color:rgb(49, 49, 49);
 
 }
 .rb-card {
+  position: relative;
   width: 100%;
 }
 .rb-card img {
   width: 100%;
   border-radius: 10px;
-
 }
-/* /PORTFOLIO */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgb(30, 135, 113);
+}
 
+
+.rb-card i {
+  display: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.rb-card:hover .overlay {
+  opacity: 0.8;
+  border-radius: 10px;
+  
+}
+
+.rb-card:hover i {
+  display: block;
+  font-size: 2rem;
+}
+
+/* /PORTFOLIO */
 
 
 /* ABOUT */
@@ -166,6 +227,7 @@ header span {
 
 
 /* CONTACT ME */
+
 #contact-me {
   padding-bottom: 30px;
 }
@@ -186,5 +248,49 @@ header span {
   background-color:rgb(29, 131, 107) ;
   border: none;
 }
+
+.rb-submit-btn:focus {
+  background-color:rgb(29, 131, 107) ;
+  border: none;
+
+}
 /* form */
 /* /CONTACT ME */
+
+
+/* FOOTER */
+#footer {
+  background-color: rgb(58, 84, 109);
+}
+.rb-info {
+  padding-top:30px
+}
+footer p {
+  color: white;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+footer span {
+  color: rgb(27, 185, 155);
+}
+
+footer .icons {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+footer span i {
+  color: white;
+}
+
+.footer-credits {
+  background-color: rgb(44, 62, 80);
+}
+.footer-credits p {
+  height: 100%;
+  line-height: 75px;
+}
+
+/* /FOOTER */
