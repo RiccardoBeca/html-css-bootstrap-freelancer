@@ -20,9 +20,29 @@
     <nav class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-10 col-md-6 ">
-          <span>START BOOTSTRAP</span>
+          <span>
+            <a href="#">
+              START BOOTSTRAP
+            </a>
+          </span>
         </div>
-        <div class="col-6 debug text-end d-none d-md-block">MENU</div>
+        <div class="col-6 text-end d-none d-md-block">
+        <span>
+          <a href="#">
+            PORTFOLIO
+          </a>
+        </span>
+        <span>
+          <a href="#">
+            ABOUT
+          </a>
+        </span>
+        <span>
+          <a href="#">
+            CONTACT
+          </a>
+        </span>
+        </div>
         <div class="col-2  text-end d-md-none">
           <button class="burger-menu">
             <i class="fa-solid fa-bars"></i>
@@ -127,13 +147,32 @@
     <!-- /ABOUT -->
 
     <!-- CONTACT ME -->
-    <section id="contact-me" class="">
+    <section id="contact-me">
       <div class="container text-center">
-        <P>CONTACT ME</P>
+        <h2>CONTACT ME</h2>
         <div>--- STAR ---</div>
       </div>
-      <div class="w-60-container dbg-xl">
-        FORM
+      <div class="w-60-container">
+        <!-- FORM NAME -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="name" class="no_border form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <!-- FORM EMAIL -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="email" class="no_border form-control" id="exampleFormControlInput1" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="tel" class="no_border form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea placeholder="Message" class="no_border form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- FORM SUBMIT BUTTON -->
+        <input class="btn rb-submit-btn btn-primary" type="submit" value="Submit">
       </div>
     </section>
     <!-- /CONTACT ME -->

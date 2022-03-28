@@ -3,6 +3,12 @@
     font-family: 'Roboto', sans-serif;
   }
 
+  section h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
 .debug {
   background-color: rgba(95, 158, 160, .5);
   border:1px solid black;
@@ -39,11 +45,19 @@ header nav .row{
 }
 
 header nav span {
+  cursor: pointer;
   color: white;
   font-weight: bold;
 }
 
+header nav span a {
+  text-decoration: none;
+  color: white;
+}
 
+header nav span a:hover {
+  color:rgb(26, 188, 156) ;
+}
 
 
 .burger-menu {
@@ -59,6 +73,10 @@ header nav span {
 .burger-menu i {
   font-size: 2rem;
   
+}
+
+header span {
+  padding-right: 30px;
 }
 
 /* /HEADER */
@@ -97,8 +115,6 @@ header nav span {
 
 #portfolio h2 {
   color:rgb(49, 49, 49);
-  padding-bottom: 20px;
-  font-weight: bold;
 
 }
 .rb-card {
@@ -121,8 +137,6 @@ header nav span {
 
 #about h2 {
   color: white;
-  font-weight: bold;
-  padding-top: 30px;
 }
 
 #about p {
@@ -149,3 +163,28 @@ header nav span {
   margin: 0;
 }
 /* /ABOUT */
+
+
+/* CONTACT ME */
+#contact-me {
+  padding-bottom: 30px;
+}
+/* form */
+.no_border {
+  border: 0;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.rb-submit-btn {
+  background-color:rgb(26, 188, 156) ;
+  border: none;
+}
+
+.rb-submit-btn:hover {
+  background-color:rgb(29, 131, 107) ;
+  border: none;
+}
+/* form */
+/* /CONTACT ME */
