@@ -1,3 +1,8 @@
+/* GENERAL */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
 .debug {
   background-color: rgba(95, 158, 160, .5);
   border:1px solid black;
@@ -9,8 +14,20 @@
   min-height: 500px;
 }
 
+
+.w-60-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* /GENERAL */
+
+/* HEADER */
 header {
+  background-color:rgb(44, 62, 80) ;
   height: 70px;
+  position: sticky;
+  top: 0;
 }
 
 header nav {
@@ -21,12 +38,70 @@ header nav .row{
   height: 100%;
 }
 
+header nav p {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+.burger-menu {
+  width: 100%;
+}
+
+.burger-menu i {
+  width: 100%;
+}
+
+/* /HEADER */
+
+
+/* JUMBOTRON */
+#jumbotron {
+  background-color: rgb(26, 188, 156);
+  margin-bottom: 30px;
+}
+
+.jumbo-img img {
+  padding-top: 30px;
+  height: 400px;
+}
+
+#jumbotron h1 {
+  color: white;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+#jumbotron p {
+  color: white;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* /JUMBOTRON */
+
+
+/* PORTFOLIO */
+#portfolio h2 {
+  color:rgb(49, 49, 49);
+  padding-bottom: 20px;
+}
 .rb-card {
-  height: 250px;
+  width: 100%;
 }
+.rb-card img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+/* /PORTFOLIO */
 
 
-.w-60-container {
-  width: 60%;
-  margin: 0 auto;
+
+/* ABOUT */
+#about {
+  background-color:rgb(26, 188, 156);
 }
+/* /ABOUT */
