@@ -38,7 +38,7 @@ header nav .row{
   height: 100%;
 }
 
-header nav p {
+header nav span {
   color: white;
   font-weight: bold;
 }
@@ -48,10 +48,17 @@ header nav p {
 
 .burger-menu {
   width: 100%;
+  color: grey;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 3px;
+
 }
 
 .burger-menu i {
-  width: 100%;
+  font-size: 2rem;
+  
 }
 
 /* /HEADER */
@@ -84,9 +91,15 @@ header nav p {
 
 
 /* PORTFOLIO */
+#portfolio {
+  padding-bottom: 30px;
+}
+
 #portfolio h2 {
   color:rgb(49, 49, 49);
   padding-bottom: 20px;
+  font-weight: bold;
+
 }
 .rb-card {
   width: 100%;
@@ -103,5 +116,36 @@ header nav p {
 /* ABOUT */
 #about {
   background-color:rgb(26, 188, 156);
+  padding-bottom: 30px;
+}
+
+#about h2 {
+  color: white;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#about p {
+  color: white;
+  padding-top: 30px;
+}
+
+#about #download-btn {
+  padding-top: 30px;
+}
+
+.download-btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.download-btn:hover {
+  background-color: white;
+  color:rgb(44, 62, 80);
+  border: none;
+  margin: 0;
 }
 /* /ABOUT */
